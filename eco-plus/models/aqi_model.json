@@ -1,0 +1,37 @@
+{
+  "model_type": "rule_based_aqi_predictor",
+  "version": "1.0",
+  "created_at": "2025-10-05T14:16:58.733234",
+  "rules": {
+    "Good": {
+      "PM2.5_max": 12,
+      "color": "#00E400",
+      "description": "Air quality is satisfactory"
+    },
+    "Moderate": {
+      "PM2.5_max": 35.4,
+      "color": "#FFFF00",
+      "description": "Acceptable quality"
+    },
+    "Unhealthy for Sensitive Groups": {
+      "PM2.5_max": 55.4,
+      "color": "#FF7E00",
+      "description": "Members of sensitive groups may experience health effects"
+    },
+    "Unhealthy": {
+      "PM2.5_max": 150.4,
+      "color": "#FF0000",
+      "description": "Everyone may experience health effects"
+    },
+    "Very Unhealthy": {
+      "PM2.5_max": 250.4,
+      "color": "#8F3F97",
+      "description": "Health alert: everyone may experience more serious health effects"
+    },
+    "Hazardous": {
+      "PM2.5_max": 500.4,
+      "color": "#7E0023",
+      "description": "Health warnings of emergency conditions"
+    }
+  }
+}
